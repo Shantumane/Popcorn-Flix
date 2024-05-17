@@ -1,0 +1,94 @@
+.home-container {
+    display: flex;
+    .all-movies{
+        width: 75%;
+        min-height: calc(100vh - 80px);
+        border-radius: 2px solid rgb(240, 134, 5);
+        padding: 20px 40px;
+        font-family: "Roboto", sans-serif;
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            h4 {
+                text-transform: uppercase;
+                font-weight: bold;
+                border-left: 5px solid rgb(230, 131, 10);
+                padding: 10px;
+            }
+            .view-all {
+                cursor: pointer;
+                color: rgb(236, 135, 12);
+            }
+        }
+        .movies-thumbnail{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            .movie{
+                .cover {
+                    img {
+                        border-radius: 5px;
+                    }
+                }
+                .detail {
+                    width: 180px;
+                }
+                .name {
+                    font-weight: bold;
+                    height: 50px;
+                    margin-top: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+}
+
+.popular-movies {
+    width: 25%;
+    min-height: calc( 100vh - 80px);
+    padding: 20px 40px;
+    font-family: "Roboto",sans-serif;
+    h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+        border-left: 5px solid rgb(230, 131, 10);
+        padding: 10px;
+    }
+    .movies {
+        .movie {
+            margin-bottom: 20px;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .name{
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+        .view-all{
+            cursor: pointer;
+            color: rgb(236, 135, 12);
+            text-align: right;
+            margin-top: 30px;
+        }
+    }
+}
+
+
+.rating{
+    padding-right: 45px;
+    position: relative;
+    .rating-value{
+        position: absolute;
+        justify-content: space-between;
+        top: 0px;
+        right: 0px;
+        font-weight: bold;
+    }
+}
+
